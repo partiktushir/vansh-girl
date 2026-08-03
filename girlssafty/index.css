@@ -1,0 +1,305 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8ff;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,46,99,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#ffe600;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero-content p{
+    font-size:24px;
+    margin-bottom:35px;
+    animation:fadeUp 1.2s ease;
+}
+
+.hero button{
+    padding:16px 45px;
+    border:none;
+    background:#ff2e63;
+    color:#fff;
+    border-radius:12px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.4s;
+    box-shadow:0 0 25px rgba(255,46,99,.5);
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+    background:#ff0048;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    padding:90px 10%;
+    text-align:center;
+    background:#fff;
+}
+
+.about h2{
+    font-size:42px;
+    color:#ff2e63;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:34px;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+    padding:90px 10%;
+    background:linear-gradient(135deg,#ffe9f0,#ffffff);
+    text-align:center;
+}
+
+.services h2{
+    font-size:42px;
+    color:#ff2e63;
+    margin-bottom:50px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.box{
+    width:320px;
+    background:white;
+    padding:40px 25px;
+    border-radius:18px;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 35px rgba(255,46,99,.3);
+}
+
+.box i{
+    font-size:55px;
+    color:#ff2e63;
+    margin-bottom:20px;
+}
+
+.box h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.box p{
+    font-size:18px;
+    color:#666;
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+.hero-content h1{
+    font-size:38px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+.about h2,
+.services h2{
+    font-size:32px;
+}
+
+.box{
+    width:100%;
+}
+
+}
+.features{
+padding:80px 8%;
+background:#fff0f5;
+text-align:center;
+}
+
+.features h2{
+font-size:40px;
+color:#ff2e63;
+margin-bottom:15px;
+}
+
+.feature-text{
+max-width:750px;
+margin:0 auto 50px;
+font-size:18px;
+color:#555;
+line-height:1.8;
+}
+
+.feature-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.feature:hover{
+transform:translateY(-12px);
+box-shadow:0 15px 30px rgba(255,46,99,.35);
+}
+
+.icon{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.feature h3{
+color:#ff2e63;
+margin-bottom:15px;
+}
+
+.feature p{
+color:#666;
+line-height:1.7;
+}
+footer{
+    margin-top:40px;
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}

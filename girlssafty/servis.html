@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Save Girl Child</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+body{
+    background:linear-gradient(135deg,#fff0f5,#ffe4ec);
+}
+
+.service-page{
+    padding:120px 8% 70px;
+}
+
+.service-page h1{
+    text-align:center;
+    color:#ff2e63;
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.service-page p{
+    text-align:center;
+    color:#555;
+    font-size:20px;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(255,46,99,.35);
+}
+
+.service-card i{
+    font-size:55px;
+    color:#ff2e63;
+    margin-bottom:20px;
+}
+
+.service-card h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.service-card p{
+    font-size:16px;
+    line-height:28px;
+    margin-bottom:20px;
+}
+
+.service-card button{
+    background:#ff2e63;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.service-card button:hover{
+    background:#d90048;
+    transform:scale(1.05);
+}
+
+.emergency{
+    margin-top:80px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.emergency h2{
+    color:#ff2e63;
+    margin-bottom:20px;
+}
+
+.emergency button{
+    background:red;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:22px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+footer{
+    margin-top:70px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer span{
+    color:#ff2e63;
+    font-weight:bold;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,46,99,.95);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:.4s;
+}
+
+nav a:hover{
+    color:#ffe600;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🛡 Save Girl Child
+</div>
+
+<nav style="margin-right: 299px;">
+
+<a href="index.html">Home</a>
+<a href="girlsabout.html">About</a>
+<a href="servis.html">Services</a>
+<a href="contact2.html">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="service-page">
+
+<h1>Our Services</h1>
+
+<p>
+We are always ready to help and protect every girl.
+</p>
+
+<div class="service-container">
+
+<div class="service-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h2>Live Location</h2>
+
+<p>
+Share your live location instantly with your trusted family members.
+</p>
+
+<button>Use Now</button>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-bell"></i>
+
+<h2>Emergency Alert</h2>
+
+<p>
+Send an emergency alert to your loved ones with one click.
+</p>
+
+<button>Alert</button>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h2>Emergency Call</h2>
+
+<p>
+Call police or your emergency contact immediately.
+</p>
+
+<button>Call</button>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<h2>Safety Tips</h2>
+
+<p>
+Read useful safety and self-defense tips for girls.
+</p>
+
+<button>Read</button>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-hospital"></i>
+
+<h2>Nearby Hospital</h2>
+
+<p>
+Find nearby hospitals during an emergency.
+</p>
+
+<button>Search</button>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h2>Women Helpline</h2>
+
+<p>
+Quick access to women safety helpline information.
+</p>
+
+<button>Help</button>
+
+</div>
+
+</div>
+
+<div class="emergency">
+
+<h2>Need Immediate Help?</h2>
+
+<p style="margin-bottom:25px;">
+Press the SOS button to share your location.
+</p>
+
+<button onclick="sendSOS()">
+🚨 SOS
+</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🛡 Save Girl Child</h2>
+
+<p>Every Girl Deserves Safety & Respect ❤️</p>
+
+<p>Made By <span>Parteek Tushir</span></p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html> 
